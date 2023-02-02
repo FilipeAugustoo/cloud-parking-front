@@ -1,0 +1,117 @@
+{
+  "cars": [
+    {
+      "amountParked": 0,
+      "bill": 0,
+      "color": "string",
+      "entryDate": "2023-02-02T00:07:20.148Z",
+      "exitDate": "2023-02-02T00:07:20.148Z",
+      "isParked": true,
+      "license": "string",
+      "model": "string",
+      "state": "string"
+    },
+    {
+      "amountParked": 0,
+      "bill": 0,
+      "color": "string",
+      "entryDate": "2023-02-02T00:07:20.148Z",
+      "exitDate": "2023-02-02T00:07:20.148Z",
+      "isParked": true,
+      "license": "string",
+      "model": "string",
+      "state": "string"
+    },
+    {
+      "amountParked": 0,
+      "bill": 0,
+      "color": "string",
+      "entryDate": "2023-02-02T00:07:20.148Z",
+      "exitDate": "2023-02-02T00:07:20.148Z",
+      "isParked": true,
+      "license": "string",
+      "model": "string",
+      "state": "string"
+    },
+    {
+      "amountParked": 0,
+      "bill": 0,
+      "color": "string",
+      "entryDate": "2023-02-02T00:07:20.148Z",
+      "exitDate": "2023-02-02T00:07:20.148Z",
+      "isParked": true,
+      "license": "string",
+      "model": "string",
+      "state": "string"
+    },
+    {
+      "amountParked": 0,
+      "bill": 0,
+      "color": "string",
+      "entryDate": "2023-02-02T00:07:20.148Z",
+      "exitDate": "2023-02-02T00:07:20.148Z",
+      "isParked": true,
+      "license": "string",
+      "model": "string",
+      "state": "string"
+    },
+    {
+      "amountParked": 0,
+      "bill": 0,
+      "color": "string",
+      "entryDate": "2023-02-02T00:07:20.148Z",
+      "exitDate": "2023-02-02T00:07:20.148Z",
+      "isParked": true,
+      "license": "string",
+      "model": "string",
+      "state": "string"
+    },
+    {
+      "amountParked": 0,
+      "bill": 0,
+      "color": "string",
+      "entryDate": "2023-02-02T00:07:20.148Z",
+      "exitDate": "2023-02-02T00:07:20.148Z",
+      "isParked": true,
+      "license": "string",
+      "model": "string",
+      "state": "string"
+    },
+    {
+      "amountParked": 0,
+      "bill": 0,
+      "color": "string",
+      "entryDate": "2023-02-02T00:07:20.148Z",
+      "exitDate": "2023-02-02T00:07:20.148Z",
+      "isParked": true,
+      "license": "string",
+      "model": "string",
+      "state": "string"
+    },
+    {
+      "amountParked": 0,
+      "bill": 0,
+      "color": "string",
+      "entryDate": "2023-02-02T00:07:20.148Z",
+      "exitDate": "2023-02-02T00:07:20.148Z",
+      "isParked": true,
+      "license": "string",
+      "model": "string",
+      "state": "string"
+    },
+    {
+      "amountParked": 0,
+      "bill": 0,
+      "color": "string",
+      "entryDate": "2023-02-02T00:07:20.148Z",
+      "exitDate": "2023-02-02T00:07:20.148Z",
+      "isParked": true,
+      "license": "string",
+      "model": "string",
+      "state": "string"
+    }
+  ],
+  "name": "string",
+  "number_VACANCIES": 0,
+  "occupied_VACANCIES": 0
+}
