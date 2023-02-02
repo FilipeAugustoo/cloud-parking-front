@@ -6,10 +6,10 @@ export default function Header() {
     <header>
       <nav className={styles.navbar}>
         <h1 className={styles.navbar__logo}><img src={logo} alt="Logo do site" /></h1>    
-        <ul className={styles.navbar__list}>
+        <ul className={styles.navbar__list}>          
+          <li>Registrar Entrada</li>
           <li>Cadastrar Carro</li>
-          <li>Entrada</li>
-          <li>Saída</li>
+          <li>Lista De Carros</li>
         </ul>  
       </nav>    
     </header>
