@@ -19,12 +19,14 @@
     justify-content: space-evenly;
     width: 40%;
 
-    li {
+    &__item {
       font-family: 'Roboto', sans-serif;
       font-size: 1.1rem;
+      text-decoration: none;
+      color: inherit;
     }
 
-    li:hover {
+    &__item:hover {
       cursor: pointer;
       color: #fff;
     }
