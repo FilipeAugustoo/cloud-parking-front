@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header>
       <nav className={styles.navbar}>
-        <NavLink to="/home" className={styles.navbar__logo}><img src={logo} alt="Logo do site" /></NavLink>    
+        <NavLink to="/" className={styles.navbar__logo}><img src={logo} alt="Logo do site" /></NavLink>    
         <ul className={styles.navbar__list}>          
           <NavLink className={styles.navbar__list__item} to="" style={({ isActive }) =>
             isActive ? { color: 'white' } : undefined

@@ -8,7 +8,7 @@ export default function Rotas() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route index path="/home" element={<Home />}/>
+        <Route path="/" element={<Home />}/>
         <Route path="/cadastrar_carro" element={<CadastrarCarro />}/>
       </Routes>
     </BrowserRouter>
