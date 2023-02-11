@@ -14,13 +14,6 @@ export default function Login() {
   const efetuarLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const dados = {
-      user: username,
-      pass: password
-    }
-
-    console.log(dados);
-
     if(username && password) {
       const isLogged = await auth.signin(username, password);
       if(isLogged) {
