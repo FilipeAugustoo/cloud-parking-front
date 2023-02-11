@@ -12,6 +12,12 @@
     img {
       width: 25%;
     }
+    &__center {
+      img {
+        width: 25%;
+      }
+      text-align: center;
+    }
   }
 
   &__list {
