@@ -6,12 +6,15 @@ const api = axios.create({
 
 export const useApi = () => ({
   validateToken: async (token: string) => {
-
+    const response = await api.post('/user/validate-token', { token });
+    return response.data;
   },
   signin: async (username: string, password: string) => {
-    const response = await api.post('/')
+    const response = await api.post('/user/login', { username, password });
+    return response.data;
   },
   logout: async() => {
-
+    const response = await api.post('/user/logout');
+    return response.data;
   }
 });
