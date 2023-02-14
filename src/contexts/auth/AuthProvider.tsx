@@ -13,7 +13,8 @@ export const AuthProvider = ({children}: { children: JSX.Element}) => {
       const storageData = localStorage.getItem('authToken');
 
       if(storageData) {
-        const data = await api.validateToken(storageData);
+        const tokenPuro = storageData.split(" ");
+        const data = await api.validateToken(tokenPuro[1]);
         if(data.username) {
           const user = {
             username: data.username,
@@ -45,6 +46,7 @@ export const AuthProvider = ({children}: { children: JSX.Element}) => {
   const signout = async () => {
     await api.logout();
     setUser(null);
+    setToken('');
   }
 
   const setToken = (token: string) => {

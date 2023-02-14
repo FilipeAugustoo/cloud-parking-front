@@ -1,3 +1,4 @@
+import ButtonLogout from "components/ButtonLogout";
 import Header from "components/Header";
 import { AuthProvider } from "contexts/auth/AuthProvider";
 import { RequireAuth } from "contexts/auth/RequireAuth";
@@ -7,6 +8,8 @@ import Login from "pages/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function Rotas() {
+  
+
   return (
     <AuthProvider>
       <BrowserRouter>
@@ -16,6 +19,7 @@ export default function Rotas() {
           <Route path="/" element={<RequireAuth><Home /></RequireAuth>}/>               
           <Route path="/cadastrar_carro" element={<RequireAuth><CadastrarCarro /></RequireAuth>}/>
         </Routes>
+        <ButtonLogout />
       </BrowserRouter>
     </AuthProvider>
   );
