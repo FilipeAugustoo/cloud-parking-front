@@ -17,8 +17,8 @@ export default function Header() {
           [styles.navbar__logo__center]: !user
         })}><img src={logo} alt="Logo do site" /></NavLink>   
 
-        {user ? <ul className={styles.navbar__list}>          
-          <NavLink className={styles.navbar__list__item} to="" style={({ isActive }) =>
+        {true ? <ul className={styles.navbar__list}>          
+          <NavLink className={styles.navbar__list__item} to="/registrar_entrada" style={({ isActive }) =>
             isActive ? { color: 'white' } : undefined
           }>Registrar Entrada</NavLink>
 
