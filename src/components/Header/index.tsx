@@ -26,7 +26,7 @@ export default function Header() {
             isActive ? { color: 'white' } : undefined
           }>Cadastrar Carro</NavLink>
           
-          <NavLink className={styles.navbar__list__item} to="" style={({ isActive }) =>
+          <NavLink className={styles.navbar__list__item} to="/lista_carros" style={({ isActive }) =>
             isActive ? { color: 'white' } : undefined
           }>Lista De Carros</NavLink>
         </ul>  : ''}

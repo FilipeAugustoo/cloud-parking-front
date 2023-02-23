@@ -1,0 +1,34 @@
+.box::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+.box::-webkit-scrollbar-track {
+  background: #fff;        /* color of the tracking area */
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.box::-webkit-scrollbar-thumb {
+  background-color: #808080;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #fff;  /* creates padding around scroll thumb */
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  width: 50%;
+  height: 50%;
+  margin: 3% auto;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+
+  &__cars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+}
