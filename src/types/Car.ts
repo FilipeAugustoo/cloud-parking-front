@@ -1,6 +1,11 @@
 export type Car = {
+  amountParked: number,
+  bill: number,
   color: String,
-  license: String,
-  model: String,
-  state: String
+  entryDate: String,
+  exitDate: String,
+  isParked: boolean,
+  license: string,
+  model: string,
+  state: string
 }
