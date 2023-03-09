@@ -1,10 +1,17 @@
 import axios from 'axios';
-import { Car } from 'types/Car';
+import { CarCreate } from 'types/CarCreate';
+import { Parking } from 'types/Parking';
 import { UserCreate } from './../types/UserCreate';
 
 const api = axios.create({
   baseURL: process.env.REACT_APP_API
 });
+
+const header = {
+  headers: {
+    'Authorization': localStorage.getItem('authToken')
+  }  
+}
 
 export const useApi = () => ({
   validateToken: async (token: string) => {
@@ -31,8 +38,8 @@ export const useApi = () => ({
     const response = await api.get('/car/' + license);
     return response.data;
   },
-  createCar: async(car: Car) => {
-    const response = await api.post('/car', car);
+  createCar: async(car: CarCreate) => {
+    const response = await api.post('/car', car, header);
     return response.data;
   },
   entryCar: async(license: String) => {
@@ -44,7 +51,7 @@ export const useApi = () => ({
     return response.data;
   },
   findParking: async() => {
-    const response = await api.get('/parking');
+    const response = await api.get<Parking>('/parking', header);
     return response.data;
   }
 });
