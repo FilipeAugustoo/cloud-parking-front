@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { Car } from 'types/Car';
 import { CarCreate } from 'types/CarCreate';
 import { Parking } from 'types/Parking';
 import { UserCreate } from './../types/UserCreate';
@@ -31,11 +32,11 @@ export const useApi = () => ({
     return response.data;
   },
   findAllCars: async() => {
-    const response = await api.get('/car');
+    const response = await api.get<Car[]>('/car', header);
     return response.data;
   },
   findByLicense: async(license: String) => {
-    const response = await api.get('/car/' + license);
+    const response = await api.get<Car>('/car/' + license, header);
     return response.data;
   },
   createCar: async(car: CarCreate) => {
@@ -43,11 +44,11 @@ export const useApi = () => ({
     return response.data;
   },
   entryCar: async(license: String) => {
-    const response = await api.post('/parking/entry/' + license);
+    const response = await api.post('/parking/entry/' + license, null, header);
     return response.data;
   },
   exitCar: async(license: String) => {
-    const response = await api.post('/parking/exit/' + license);
+    const response = await api.post('/parking/exit/' + license, null, header);
     return response.data;
   },
   findParking: async() => {
