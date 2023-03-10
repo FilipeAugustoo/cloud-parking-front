@@ -1,5 +1,6 @@
 import Box from "components/Box";
 import ErrorText from "components/ErrorText";
+import { useApi } from "hooks/useApi";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import styles from './RegistrarEntrada.module.scss';
@@ -12,10 +13,12 @@ type CredentialInputs = {
 export default function RegistrarEntrada() {
   const navigate = useNavigate();
   const { register, handleSubmit, formState: { errors } } = useForm<CredentialInputs>();
+  const api = useApi();
   
   const registrar: SubmitHandler<CredentialInputs> = data => { 
+    api.entryCar(data.placa);
     navigate('/');
-    console.log(data.placa);
+    
   }
 
   return (
