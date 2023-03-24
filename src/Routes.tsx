@@ -1,6 +1,7 @@
 import ButtonLogout from "components/ButtonLogout";
 import Header from "components/Header";
 import { AuthProvider } from "contexts/auth/AuthProvider";
+import { RequireAuth } from "contexts/auth/RequireAuth";
 import CadastrarCarro from "pages/CadastrarCarro";
 import Home from "pages/Home";
 import ListaDeCarros from "pages/ListaDeCarros";
@@ -17,10 +18,10 @@ export default function Rotas() {
         <Header />
         <Routes>
           <Route path="/signin" element={<Login />}/>  
-          <Route path="/" element={<Home />}/>               
-          <Route path="/cadastrar_carro" element={<CadastrarCarro />}/>
-          <Route path="/registrar_entrada" element={<RegistrarEntrada />}/>
-          <Route path="/lista_carros" element={<ListaDeCarros />}/>
+          <Route path="/" element={<RequireAuth><Home /></RequireAuth >}/>               
+          <Route path="/cadastrar_carro" element={<RequireAuth ><CadastrarCarro /></RequireAuth>}/>
+          <Route path="/registrar_entrada" element={<RequireAuth ><RegistrarEntrada /></RequireAuth>}/>
+          <Route path="/lista_carros" element={<RequireAuth ><ListaDeCarros /></RequireAuth>}/>
         </Routes>
         <ButtonLogout />
       </BrowserRouter>
