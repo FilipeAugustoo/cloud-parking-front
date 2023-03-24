@@ -1,14 +1,23 @@
 import BoxCar from "components/BoxCar";
-import { useState } from "react";
-import carsJson from './data.json';
+import { useApi } from "hooks/useApi";
+import { useEffect, useState } from "react";
+import { Car } from "types/Car";
 import styles from './ListaDeCarros.module.scss';
 
 export default function ListaDeCarros() {
-  const [cars, setCars] = useState(carsJson);
+  const [cars, setCars] = useState<Car[]>();
+  const api = useApi();
+
+  useEffect(() => {
+    api.findAllCars().then((res) => { 
+      setCars(res);
+    });
+  }, [])
+  
   return (
     <section className={styles.box}>
       <div className={styles.box__cars}>
-        {cars.map(car => (
+        {cars?.map(car => (
           <BoxCar>
             <h2>Modelo: {car.model}</h2>
             <p>Placa: {car.license}</p>

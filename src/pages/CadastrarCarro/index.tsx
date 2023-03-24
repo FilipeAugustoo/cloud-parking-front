@@ -21,7 +21,7 @@ export default function CadastrarCarro() {
     e.preventDefault();
     api.createCar(car);
 
-    navigate('/');
+    navigate('/lista_carros');
   }
 
   return (
