@@ -18,6 +18,7 @@ export default function Login() {
       const isLogged = await auth.signin(username, password);
       if(isLogged) {
         navigate('/');
+        window.location.reload();
       } else {
         alert("Usuário ou senha incorreto");
       }
