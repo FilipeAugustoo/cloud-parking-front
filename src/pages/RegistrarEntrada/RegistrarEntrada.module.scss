@@ -35,3 +35,17 @@
     cursor: pointer;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .form_principal {
+
+    &__input {
+      font-size: 1.3rem;
+    }
+
+    &__botao {
+      height: 2.5rem;
+      font-size: 1.3rem;
+    }
+  }
+}

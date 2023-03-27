@@ -17,3 +17,19 @@
   background-color: #b49722;
   cursor: pointer;
 }
+
+@media screen and (max-width: 767px) {
+  .botao {
+    width: 15%;
+    left: 80%;
+    top: 92%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .botao {
+    width: 10%;
+    left: 88%;
+    top: 95%;
+  }
+}

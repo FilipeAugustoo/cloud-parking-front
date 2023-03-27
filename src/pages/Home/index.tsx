@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <Box>
-      <h2>Vagas: {parking?.occupied_VACANCIES}/{parking?.number_VACANCIES}</h2>
+      <h2 className={styles.vagas}>Vagas: {parking?.occupied_VACANCIES}/{parking?.number_VACANCIES}</h2>
       <div className={styles.itens}>
         {parking?.cars.map(car => (
           <div className={styles.item} onClick={() => {setCar(car.model); setLicense(car.license)}}>
